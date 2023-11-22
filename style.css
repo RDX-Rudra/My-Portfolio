@@ -469,6 +469,7 @@ span {
     flex-direction: column;
     width: 100%;
     padding: 5rem 1rem;
+    overflow: hidden;
 }
 
 .testimonial-container .testimonial-wrapper {
@@ -910,7 +911,7 @@ span {
         position: fixed;
         top: 0;
         left: 0;
-        width: 78%;
+        width: 100%;
     }
     #menu-icon {
         display: block;
