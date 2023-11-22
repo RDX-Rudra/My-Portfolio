@@ -675,6 +675,9 @@ span {
         left: 0;
         width: 100%;
     }
+    section {
+        padding: 10rem 1% 2rem;
+    }
     .navbar a:nth-child(1),
     .navbar a:nth-child(2), 
     .navbar a:nth-child(3), 
@@ -694,20 +697,20 @@ span {
         max-width: 50rem;
     }
     .home .profession-container {
-        height: 158.8rem;
+        height: 150.8rem;
         position: absolute;
         top: 7%;
-        right: -195px;
+        right: 0;
         transform: translateY(-50%);
         width: 768px;
     }
     .home .profession-container .profession-box {
-        right: -21rem;
+        right: -25rem;
         height: 85.8rem;
     }
     .home .profession-container .profession-box {
         position: absolute;
-        top: 728px;
+        top: 669px;
     }
     .home .profession-container .overlay {
         top: 50%;
