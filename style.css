@@ -951,11 +951,11 @@ span {
     }
 
     .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-105px, -440px);
+        transform: rotate(90deg) translate(-62px, -412px);
     }
 
     .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-210px, -335px);
+        transform: rotate(180deg) translate(-180px, -335px);
     }
 
     .contact form .input-box input {
