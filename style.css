@@ -32,6 +32,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    overflow: hidden;
 }
 
 .header {
@@ -45,6 +46,7 @@ body {
     align-items: center;
     z-index: 100;
     transition: 5s;
+    
 }
 
 .header.sticky {
@@ -469,7 +471,7 @@ span {
     flex-direction: column;
     width: 100%;
     padding: 5rem 1rem;
-    overflow: hidden;
+    gap: 50px;
 }
 
 .testimonial-container .testimonial-wrapper {
@@ -671,7 +673,7 @@ span {
         position: fixed;
         top: 0;
         left: 0;
-        width: 84%;
+        width: 100%;
     }
     .navbar a:nth-child(1),
     .navbar a:nth-child(2), 
@@ -731,7 +733,7 @@ span {
         position: fixed;
         top: 0;
         left: 0;
-        width: 95%;
+        width: 100%;
     }
     #menu-icon {
         display: block;
@@ -965,7 +967,7 @@ span {
         position: fixed;
         top: 0;
         left: 0;
-        width: 78%;
+        width: 100%;
     }
     #menu-icon {
         display: block;
@@ -1007,7 +1009,7 @@ span {
         position: fixed;
         top: 0;
         left: 0;
-        width: 78%;
+        width: 100%;
     }
     #menu-icon {
         display: block;
@@ -1049,7 +1051,7 @@ span {
         position: fixed;
         top: 0;
         left: 0;
-        width: 78%;
+        width: 100%;
     }
     #menu-icon {
         display: block;
