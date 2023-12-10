@@ -311,7 +311,7 @@ span {
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    background: rgb(136, 217, 208);
+    background: var(--bg-color);
 }
 
 .about-img img {
