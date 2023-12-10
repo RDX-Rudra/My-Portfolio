@@ -384,7 +384,182 @@ span {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+/* Skill--------------------------------- */
+.skills{
+    background: var(--bg-color);
+}
 
+.skills .main-text {
+    padding: 3rem 2rem 4rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.skill-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.skill-main h3 {
+    display: flex;
+    font-size: 2.6rem;
+    transition: .5s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-main:hover h3{
+    color: var(--main-color);
+}
+
+.skill-bar {
+    font-size: 1.6rem;
+    margin-bottom: 2.3rem;
+}
+
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--text-color);
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.skill-left .skill-bar .bar span{
+    display: flex;
+    height: 10px;
+    border-radius: 25px;
+    background: var(--main-color);
+    box-shadow: var(--shadow-color);
+}
+
+.skill-bar .bar .html {
+    width: 76%;
+    animation: html 2s;
+}
+.skill-bar .bar .css {
+    width: 81%;
+    animation: css 3s;
+}
+.skill-bar .bar .javascript {
+    width: 65%;
+    animation: javascript 4s;
+}
+.skill-bar .bar .java {
+    width: 82%;
+    animation: java 5s;
+}
+
+@keyframes html{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 72%;
+    }
+}
+@keyframes css{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 81%;
+    }
+}
+@keyframes javascript{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}
+@keyframes java{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 82%;
+    }
+}
+
+.skill-right .professional {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.box{
+    position: relative;
+    margin: 10px 0;
+    flex: 1 1 15rem;
+}
+
+.box .text {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+
+.box .text big{
+    font: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box .text small{
+    display: block;
+    font-weight: 600;
+}
+
+.circl {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circl .points {
+    width: 2px;
+    height: 10px;
+    background-color: var(--bg-color);
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+}
+
+.points.marked{
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+}
+
+@keyframes glow{
+    0%{
+        background: var(--bg-color);
+        box-shadow: none;
+    }
+    100%{
+        background: var(--main-color);
+        box-shadow: var(--shadow-color);
+    }
+}
+
+/* Portfolio Section------------------------- */
 .portfolio {
     padding-bottom: 10rem;
 }
@@ -964,6 +1139,9 @@ span {
 
     .contact form .input-box input {
         width: 100%;
+    }
+    .skill-main {
+        grid-template-columns: repeat(1,1fr);
     }
 }
 @media (max-width: 435px) {
