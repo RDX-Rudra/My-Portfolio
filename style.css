@@ -568,6 +568,19 @@ span {
     margin-bottom: 4rem;
 }
 
+.portfolio .portmain-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.fillter-buttons .btn{
+    padding: 1rem 2rem;
+    font-weight: 400;
+}
+
 .portfolio .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

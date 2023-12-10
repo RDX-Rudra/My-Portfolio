@@ -74,6 +74,9 @@ circles.forEach(elem => {
     }
 });
 
+// mix it up/////////////////////////////////////
+var mixer = mixitup('.portmain-container')
+
 ScrollReveal({ 
     reset: true,
     distance: '80px',
