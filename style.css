@@ -858,7 +858,8 @@ span {
     .navbar a:nth-child(2), 
     .navbar a:nth-child(3), 
     .navbar a:nth-child(4),
-    .navbar a:nth-child(5) {
+    .navbar a:nth-child(5), 
+    .navbar a:nth-child(6) {
         color: var(--main-color);
     }
     #darkMode-icon {
@@ -1099,7 +1100,7 @@ span {
         right: 5rem;
     }
     #darkMode-icon {
-        right: 10rem;
+        right: 6rem;
     }
 
     .home {
@@ -1156,7 +1157,7 @@ span {
         right: 12rem;
     }
     #darkMode-icon {
-        right: 18rem;
+        right: 6rem;
     }
     .home .profession-container {
         top: 605px;
@@ -1198,7 +1199,7 @@ span {
         right: 12rem;
     }
     #darkMode-icon {
-        right: 18rem;
+        right: 6rem;
     }
     .home .profession-container {
         top: 500px;
@@ -1240,7 +1241,7 @@ span {
         right: 12rem;
     }
     #darkMode-icon {
-        right: 18rem;
+        right: 6rem;
     }
     .home .profession-container {
         top: 316px;
