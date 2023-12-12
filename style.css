@@ -34,7 +34,7 @@ body {
     color: var(--text-color);
     overflow: hidden;
 }
-
+/* ------------header----------------------------------------- */
 .header {
     position: fixed;
     top: 0;
@@ -114,7 +114,7 @@ section {
     min-height: 100vh;
     padding: 10rem 7% 2rem;
 }
-
+/* -----------Home--------------------------------------------------------------- */
 .home {
     display: flex;
     align-items: center;
@@ -305,7 +305,7 @@ section {
 span {
     color: var(--main-color);
 }
-
+/* -----------------------About-------------------------------- */
 .about {
     display: flex;
     justify-content: center;
@@ -316,6 +316,7 @@ span {
 
 .about-img img {
     width: 36vw;
+    background: var(--bg-color);
 }
 
 .heading {
