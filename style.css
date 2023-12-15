@@ -671,7 +671,7 @@ span {
 }
 
 .testimonial-wrapper .testimonial-box {
-    background: var(--white-color);
+    background: var(--bg-color);
     padding: 1rem;
     border-radius: 2rem;
     overflow: hidden;
