@@ -33,7 +33,32 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     overflow: hidden;
+    cursor: none;
 }
+/* ------------cursor----------------------- */
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--text-color);
+}
+
+.cursor-outline {
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--text-color);
+}
+
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
 /* ------------header----------------------------------------- */
 .header {
     position: fixed;
@@ -462,6 +487,10 @@ span {
     width: 82%;
     animation: java 5s;
 }
+.skill-bar .bar .Python {
+    width: 75%;
+    animation: Python 5s;
+}
 
 @keyframes html{
     0% {
@@ -493,6 +522,14 @@ span {
     }
     100% {
         width: 82%;
+    }
+}
+@keyframes Python{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
     }
 }
 
