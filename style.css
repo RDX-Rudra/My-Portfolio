@@ -1161,6 +1161,9 @@ span {
     html {
         font-size: 50%;
     }
+    .cursor-dot, .cursor-outline{
+        display: none;
+    }
     .header {
         position: fixed;
         top: 0;
