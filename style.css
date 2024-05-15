@@ -77,6 +77,21 @@ body {
     display: none; /* or any other method you prefer to hide the header */
 }
 
+/* CSS to initially hide the element and define the animation */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+  }
+  
+  /* CSS to show the element */
+  .visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+  }
+  
+
 .header.sticky {
     background: var(--bg-color);
     box-shadow: 0 .1rem 1rem var(--shadow-color);

@@ -46,6 +46,21 @@ function handleStickyHeader() {
     }, 3000); // Adjust the time as needed
 }
 
+// Function to hide the element
+function hideElement() {
+    var element = document.getElementById('myElement');
+    element.classList.remove('visible');
+    element.classList.add('hidden');
+  }
+  
+  // Function to show the element
+  function showElement() {
+    var element = document.getElementById('myElement');
+    element.classList.remove('hidden');
+    element.classList.add('visible');
+  }
+  
+
 // Event listener for scroll event to handle sticky header
 window.addEventListener('scroll', () => {
     header.classList.remove('hidden'); // Show the header when scrolling
