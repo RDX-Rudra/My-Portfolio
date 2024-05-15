@@ -70,8 +70,11 @@ body {
     display: inline-flex;
     align-items: center;
     z-index: 100;
-    transition: 3s;
-    
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
+}
+
+.header.hidden {
+    display: none; /* or any other method you prefer to hide the header */
 }
 
 .header.sticky {
