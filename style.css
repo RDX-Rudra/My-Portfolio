@@ -55,7 +55,7 @@ body {
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    z-index: 1;
+    z-index: 101;
     pointer-events: none;
 }
 
@@ -340,7 +340,7 @@ span {
 }
 
 .about-img img {
-    width: 36vw;
+    width: 30vw;
     background: var(--bg-color);
 }
 
