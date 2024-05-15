@@ -100,7 +100,7 @@ body {
 }
 
 .header.sticky .navbar a.active {
-    color: var(--main-color)
+    color: var(--main-color);
 }
 
 .navbar a.active::before {
