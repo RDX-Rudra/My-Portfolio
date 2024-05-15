@@ -22,6 +22,35 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
+// Function to update the active menu link based on the current section
+function updateActiveMenuLink() {
+    let sectionPositions = Array.from(sections).map(section => {
+        return {
+            top: section.offsetTop,
+            id: section.getAttribute('id')
+        };
+    });
+
+    let currentSectionId = sectionPositions.reduce((acc, section) => {
+        if (window.scrollY >= section.top - header.offsetHeight) {
+            return section.id;
+        }
+        return acc;
+    }, 'home');
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + currentSectionId) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Call the updateActiveMenuLink function on scroll and page load
+window.addEventListener('scroll', updateActiveMenuLink);
+document.addEventListener('DOMContentLoaded', updateActiveMenuLink);
+
+
 
 let sections = document.querySelectorAll('section')
 let navLinks = document.querySelectorAll('header nav a')
