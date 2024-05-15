@@ -338,9 +338,8 @@ section {
 
 .home-img img {
     position: absolute;
-    bottom: 0;
     right: 2rem;
-    bottom: 2rem;
+    bottom: 10rem;
     width: 25%;
     pointer-events: none;
 }
